@@ -30,7 +30,7 @@ Provide CRUD operations to the Regions table but the solution should be consumab
 ### Functional requirements
 Enforce data integrity between the regions and countries' tables
 - It should check if the REGION_ID being inserted/updated exists in the regions table before allowing the modification.
-    - If the REGION_ID doesn't exist in the regions table,       appropriate error handling should be implemented to prevent invalid data from being inserted or updated.
+    - If the REGION_ID doesn't exist in the regions table, appropriate error handling should be implemented to prevent invalid data from being inserted or updated.
 
 ## Task 4
 ### Functional requirements
