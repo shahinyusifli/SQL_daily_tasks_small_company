@@ -1,0 +1,52 @@
+Table Restaurant {
+id int [pk, increment]
+address varchar
+city varchar
+country varchar
+restaurant_name varchar
+branch_id int [ref: &gt; Branch.id]
+tables_id int [ref: &gt; Restaurant_tables.id]
+}
+Table Restaurant_tables{
+id int [pk]
+seat_count int
+types varchar
+}
+Table Branch {
+id int [pk, increment]
+branch_phone_numbers varchar
+branch_name varchar
+}
+Table Comment {
+id int [pk, increment]
+comment_type varchar
+description varchar
+}
+Table Clients {
+id int [pk, increment]
+
+name varchar
+surname varchar
+phone_number int
+comment_id int [ref: &gt; Comment.id]
+}
+
+Table Operators {
+id int [pk, increment]
+name varchar
+surname varchar
+personal_identification_number int
+phone_number int
+branch int [ref: &gt; Branch.id]
+restaurant_id int [ref: &gt; Restaurant.id]
+}
+
+Table Reservation {
+id int [pk, increment]
+phone_number int [ref: &gt; Clients.phone_number]
+restaurant_id int [ref: &gt; Restaurant.id]
+seating_table_id int [ref: &gt; Restaurant_tables.id]
+date datetime
+time timestamp
+comment_id int [ref: &gt; Comment.id]
+}
