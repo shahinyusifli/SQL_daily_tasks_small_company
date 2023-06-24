@@ -1,0 +1,7 @@
+Indeed, it is some question that needs attention to the syntax of the query. I would like to share some
+mistakes in the query. Firstly, the absence of some letters in column names such as &quot;a&quot; can be seen in
+the reading line. Also, there is some letter absence in the query which is highlighted with green lines.
+Thirdly, I want to get attention for some brackets which some of which are extra and some of them are
+missing, they are highlighted respectively blue and yellow. Also, I can count error as a format problem in
+condition, it must be a string but there is something is missing which can be seen with purple under-line.
+But fixed query can be seen under My &quot;Fixed variant title&quot; with the result of the fixed query.
