@@ -5,34 +5,6 @@ There is an example database containing the following tables: Regions, Countries
 
 ## Task 1
 ### Functional requirements
-Provide CRUD operations to the Regions table but the solution should be consumable for other schema objects as well. 
-- insert_region: Accepts REGION_ID and REGION_NAME as parameters and inserts a new region into the regions table.
-- update_region: Accepts REGION_ID and REGION_NAME as parameters and updates the region with the specified REGION_ID in the regions table.
-- delete_region: Accepts REGION_ID as a parameter and deletes the region with the specified REGION_ID from the regions table.
-- get_region: Accepts REGION_ID as a parameter and retrieves the region with the specified REGION_ID from the regions table.
-### Technical requirements
-- Using PL/SQL Scehma objects.
-
-## Task 2
-Enforce data integrity between the regions and countries' tables
-- It should check if the REGION_ID being inserted/updated exists in the regions table before allowing the modification.
-    - If the REGION_ID doesn't exist in the regions table,       appropriate error handling should be implemented to prevent invalid data from being inserted or updated.
-
-## Task 3
-Create a Schema object in a logical file system for Retrieve employees in a given department which can be used by back-end developers.
-### Technical requirements
-- Exception handling should be implemented to handle cases where no employees are found for the given department.
-- Using PL/SQL Schema objects is required.
-- It is not allowed to use primitive data types.
-
-## Task 4
-Calculate the average salary of employees in a specific job
-### Technical requirements
-- Exception handling should be implemented to handle cases where no employees are found for the given job.
-- Solution should be stored logical file system of the database
-
-## Task 5
-### Functional requirements
 Some tasks were done in a daily manner. They should be made reusable and stored as Schema objects in the Oracle database. Also, they can be used for new enterprise applications therefore all of them should be stored under the same Schema object. In total, 4 tasks should be designed and implemented. Secondly, they should be collected under the same Schema object. Finally, a unit test should be written for each of 4 tasks, and the unit test for each task should be stored in 
 - List all the departments and the number of employees per each department
 - List the employees with the lowest salary per each department
@@ -43,6 +15,35 @@ maximum salary per job.
 ### Technical requirements
 - Exception handling should be implemented for some tasks.
 - Solutions should be stored logical file system of the database
+
+## Task 2
+### Functional requirements
+Provide CRUD operations to the Regions table but the solution should be consumable for other schema objects as well. 
+- insert_region: Accepts REGION_ID and REGION_NAME as parameters and inserts a new region into the regions table.
+- update_region: Accepts REGION_ID and REGION_NAME as parameters and updates the region with the specified REGION_ID in the regions table.
+- delete_region: Accepts REGION_ID as a parameter and deletes the region with the specified REGION_ID from the regions table.
+- get_region: Accepts REGION_ID as a parameter and retrieves the region with the specified REGION_ID from the regions table.
+### Technical requirements
+- Using PL/SQL Scehma objects.
+
+## Task 3
+Enforce data integrity between the regions and countries' tables
+- It should check if the REGION_ID being inserted/updated exists in the regions table before allowing the modification.
+    - If the REGION_ID doesn't exist in the regions table,       appropriate error handling should be implemented to prevent invalid data from being inserted or updated.
+
+## Task 4
+Create a Schema object in a logical file system for Retrieve employees in a given department which can be used by back-end developers.
+### Technical requirements
+- Exception handling should be implemented to handle cases where no employees are found for the given department.
+- Using PL/SQL Schema objects is required.
+- It is not allowed to use primitive data types.
+
+## Task 5
+Calculate the average salary of employees in a specific job
+### Technical requirements
+- Exception handling should be implemented to handle cases where no employees are found for the given job.
+- Solution should be stored logical file system of the database
+
 
 ## Task 6
 Think yourself SQL statement which could be useful according data model for database users.
@@ -66,3 +67,4 @@ where b.job_id=SY_ANA;
 
 - Analyze result of query
 - If there is some bug in mentioned query, fix it
+
