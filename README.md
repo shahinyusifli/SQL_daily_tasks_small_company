@@ -1,7 +1,7 @@
 # SQL_daily_tasks_small_company
 
 
-There is an example database containing the following tables: Regions, Countries, Locations, Departments, Employees, Job History, and Jobs. The primary objective is to develop CRUD operations in PL/SQL based on the business requirements. To achieve this, we aim to utilize various Schema objects like Cursors, Triggers, Stored Procedures, and Functions. Additionally, there are specific tasks where I will implement Collection data types such as nested tables.
+There is an example database containing the following tables: Regions, Countries, Locations, Departments, Employees, Job History, and Jobs. The primary objective is to develop data operations in PL/SQL based on the business requirements. To achieve this, we aim to utilize various Schema objects like Cursors, Triggers, Stored Procedures, and Functions. Additionally, there are specific tasks where I will implement Collection data types such as nested tables.
 
 ## Task 1
 ### Functional requirements
@@ -27,11 +27,13 @@ Provide CRUD operations to the Regions table but the solution should be consumab
 - Using PL/SQL Scehma objects.
 
 ## Task 3
+### Functional requirements
 Enforce data integrity between the regions and countries' tables
 - It should check if the REGION_ID being inserted/updated exists in the regions table before allowing the modification.
     - If the REGION_ID doesn't exist in the regions table,       appropriate error handling should be implemented to prevent invalid data from being inserted or updated.
 
 ## Task 4
+### Functional requirements
 Create a Schema object in a logical file system for Retrieve employees in a given department which can be used by back-end developers.
 ### Technical requirements
 - Exception handling should be implemented to handle cases where no employees are found for the given department.
@@ -39,6 +41,7 @@ Create a Schema object in a logical file system for Retrieve employees in a give
 - It is not allowed to use primitive data types.
 
 ## Task 5
+### Functional requirements
 Calculate the average salary of employees in a specific job
 ### Technical requirements
 - Exception handling should be implemented to handle cases where no employees are found for the given job.
@@ -46,6 +49,7 @@ Calculate the average salary of employees in a specific job
 
 
 ## Task 6
+### Functional requirements
 Think yourself SQL statement which could be useful according data model for database users.
 Please substantiate your point of view and shortly explain what you did.
 
@@ -53,6 +57,7 @@ To help you with these exercises you will find the data model here:
 ![plot](./Data_model/Data_model.png)
 
 ## Task 7
+### Functional requirements
 There is some query which has bugs.
 ``` plsql
 select *
@@ -65,6 +70,19 @@ WHERE A.slary &gt;(Select avg(salary) from employees)) and a.slary &lt; select
 where b.job_id=SY_ANA;
 ```
 
-- Analyze result of query
-- If there is some bug in mentioned query, fix it
+- Analyze result of query. If there is some bug in mentioned query, fix it
 
+## Task 8
+### Functional requirements
+According to the Jobs table (provided in company_db.sql script) what could you tell about the
+employees table for the System Analyst position (SY_ANA)?
+
+## Task 9
+### Functional requirements
+Create the data model for a restaurant chain database according to the following information:
+
+- Organization has restaurant chain (of which you want to store address, city, country, restaurant name and branch phone numbers ( operator, kitchen, accounting). Each restaurant has seating tables with different seat count and types. Chain has flagship restaurant. Restaurant clients are registered in restaurant database by operators while caller is making reservation. Information about operator contains name, surname, person identification number, personal phone number, branch where he is sitting (physically working) and restaurant for which he is making reservations. Client data could contain information about client name, surname, phone number and operator comment (discounts, allergens, etc.). Reservation can be made by everyone who call to restaurant operator (do not need store information about calls). While operator is creating reservation, he is asking name, phone number, restaurant name (address), seating information, date, time and offers caller became as client. Operator can add comment about reservation.
+
+### Technical requirements
+- Described database should be modeling by drawing.
+- structural text for creating a data model should be attached in solution
