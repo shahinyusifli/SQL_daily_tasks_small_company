@@ -278,9 +278,6 @@ CREATE INDEX JHIST_JOB_IX ON job_history(JOB_ID);
 
 INSERT INTO job_history (EMPLOYEE_ID, START_DATE, END_DATE, JOB_ID, DEPARTMENT_ID) VALUES
 (102, DATE '1993-01-13', DATE '1998-07-24', 'IT_PROG', 60),
-(101, DATE '1989-09-21', DATE '1993-10-27', 'AC_ACCOUNT', 110);
-
-(102, DATE '1993-01-13', DATE '1998-07-24', 'IT_PROG', 60),
 (101, DATE '1989-09-21', DATE '1993-10-27', 'AC_ACCOUNT', 110),
 (101, DATE '1993-10-28', DATE '1997-03-15', 'AC_MGR', 110),
 (201, DATE '1996-02-17', DATE '1999-12-19', 'MK_REP', 20),
@@ -305,9 +302,6 @@ CREATE TABLE jobs (
 -- Insert statement for jobs
 
 INSERT INTO jobs (JOB_ID, JOB_TITLE, MIN_SALARY, MAX_SALARY) VALUES
-('AD_PRES', 'President', 20000, 40000),
-('AD_VP', 'Administration Vice President', 15000, 30000);
-
 ('AD_PRES', 'President', 20000, 40000),
 ('AD_VP', 'Administration Vice President', 15000, 30000),
 ('AD_ASST', 'Administration Assistant', 3000, 6000),
