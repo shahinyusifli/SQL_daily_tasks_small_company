@@ -1,0 +1,4 @@
+Many informative results can come from the &quot;employees table&quot; using the &quot;Jobs table&quot; but I use them for
+finding how many employees can earn less and more than the minimum and earn more than maximum
+salary. I can say System analysis staff earn less than the minimum but only two of them can earn more
+than the minimum. Surprisingly, nobody can earn more than the maximum.
